@@ -138,3 +138,11 @@ button {
 button.purple:hover {
   background-color: hsl(245, 75%, 62%);
 }
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("/images/pattern-background-mobile.svg");
+    /* background-size: cover; */
+    background-position: center;
+  }
+}
