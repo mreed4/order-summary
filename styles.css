@@ -20,7 +20,7 @@
 }
 
 body {
-  background-image: url("/images/pattern-background-desktop.svg");
+  background-image: url("./images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 100vh;
@@ -141,7 +141,7 @@ button.purple:hover {
 
 @media (min-width: 768px) {
   body {
-    background-image: url("/images/pattern-background-mobile.svg");
+    background-image: url("./images/pattern-background-mobile.svg");
     /* background-size: cover; */
     background-position: center;
   }
