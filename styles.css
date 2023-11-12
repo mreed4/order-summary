@@ -12,3 +12,129 @@
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  color: var(--dark-blue);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p {
+  text-align: center;
+  color: var(--desaturated-blue);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  /* margin-bottom: 1rem; */
+}
+
+a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  transition: color 150ms ease-in-out, text-decoration-color 150ms ease-in-out;
+  text-decoration-color: inherit;
+}
+
+a:hover {
+  color: hsl(245, 75%, 62%);
+  text-decoration-color: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 2em;
+  font-weight: 700;
+  transition: background-color 150ms ease-in-out;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+#root {
+  width: 25em;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 2.25em;
+  padding-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+  background-color: var(--very-pale-blue);
+  padding: 1.5em;
+  border-radius: 0.75em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.pricing-wrapper > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pricing-wrapper img {
+  width: 48px;
+  margin-right: 1em;
+}
+
+.pricing {
+  color: var(--desaturated-blue);
+}
+
+.purple {
+  background-color: var(--bright-blue);
+  color: white;
+  box-shadow: 0 0.75rem 1em 0.5em hsla(245, 75%, 52%, 0.2);
+}
+
+.transparent {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  border-color: var(--pale-blue);
+}
+
+button.purple:hover {
+  background-color: hsl(245, 75%, 62%);
+}
